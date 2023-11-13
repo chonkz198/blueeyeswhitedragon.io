@@ -1,0 +1,176 @@
+/* CSS Document */
+body {
+       margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url("/img/yugioh.jpg");
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'matrix ii bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    height: 100vh;
+    padding: 10px;
+}
+#card {
+    max-height: 80vh;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: url("/img/Textures/Normal Texture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    animation: flyingCarpet 4s ease-in-out infinite;
+    aspect-ratio: 17/24;
+    position: absolute;
+    border: 10px solid;
+    border-image-source: url("/img/Textures/Dark Syncro Texture.png");
+    border-image-repeat: stretch;
+    border-image-slice: 20;
+	
+}
+@keyframes flyingCarpet {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateY(-10px); /* Midway point, move up */
+    }
+    100% {
+        transform: translateY(0); /* Return to the start position */
+	}
+}
+#name {
+   max-width: 90%;
+  max-height: 10%;
+  font-size: clamp(14px, 5vw, 21px);
+	font-variant: small-caps;
+	color: #000;
+  border-top: 5px solid rgba(255,255,255,.7);
+  border-left: 5px solid rgba(255,255,255,.7);
+  border-right: 5px solid rgba(0,0,0,.5);
+  border-bottom: 5px solid rgba(0,0,0,.5);
+  margin: 1vh;
+  padding: 1%;
+}
+#symbol {
+  	max-width: 10%;
+  	max-height: 5%;
+	font-size: 10px;
+  	float: right;
+}
+#symbol img {
+  width: 100%;
+  margin-top: 0px;
+}
+#level { 
+	text-align: right;
+  	color: yellow;
+  	display: flex;
+    justify-content: flex-end;
+    color: yellow;
+    margin-right:10%;
+	
+}
+#pic {
+  	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	
+}
+#pic img {
+    border: 8px solid #545F7C;
+	border-image-source: url("/img/Textures/Legendary Dragon Texture.png");
+    border-image-repeat: stretch;
+    border-image-slice: 20;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    width: 95%;
+    filter: hue-rotate(330deg) saturate(1.2) brightness(1.2) contrast(0.8);
+}
+#description {
+  margin: 4%;
+  background: #DDCCB3;
+  padding: 2%;
+  border: 4px solid #B34930;
+}
+
+
+#description h2 {
+    font-variant: small-caps;
+    margin: 0;
+    font-style: normal;
+    font-size: clamp(10px, 5vw, 20px);
+    color: #000;
+}
+
+#description p {
+    font-style: italic;
+    font-size: clamp(6px, 5vw, 14px);
+    margin: 0;
+    color: #000;
+}
+#stats {
+    margin-top: 2%;
+    text-align: right;
+    color: #000;
+	font-size:clamp(8px, 2vh, 16px);
+}
+#stats p {
+  	margin-top: 1%;
+  	text-align: left;
+	border-bottom: 2px solid #1B6C8E;
+}
+
+#info-container {
+    max-width: 300px;
+    margin-left: 20px;
+    font-family: 'matrix ii bold';
+    color: #fff;
+}
+#info {
+    max-width: 300px;
+    margin-left: 20px;
+    font-family: 'matrix ii bold';
+    color: #fff;
+}
+#buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.styled-button {
+    width: clamp(65px, 15vw, 80px);
+    background-image: url("/img/Textures/Normal Texture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	padding: inherit;
+    font-size: clamp(10px, 2vw, 14px);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    color: #000;
+    font-family: 'matrix ii bold';
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
+.styled-button:hover {
+    background: #333;
+	color:antiquewhite;
+}

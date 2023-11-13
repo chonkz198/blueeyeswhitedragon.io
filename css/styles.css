@@ -1,0 +1,58 @@
+/* CSS Document */
+@font-face {
+    font-family: 'matrix ii bold';
+    src: url('/font/matrix-ii-bold.ttf') format('truetype'); /* Correct format for TTF */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000; /* Setting a black background */
+    font-family: 'matrix ii bold', sans-serif; /* Correct font family declaration */
+}
+
+#video-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#summon-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #BF8737;
+    color: #fff;
+    font-size: 20px;
+  border-top: 5px solid rgba(255,255,255,.7);
+  border-left: 5px solid rgba(255,255,255,.7);
+  border-right: 5px solid rgba(0,0,0,.5);
+  border-bottom: 5px solid rgba(0,0,0,.5);
+  margin: 15px 15px;
+  padding: 8px;
+    cursor: pointer;
+    font-family: 'matrix ii bold', sans-serif; /* Correct font family declaration */
+    /* Remove or adjust the line below to change text case */
+    /* text-transform: uppercase; */
+    letter-spacing: 2px; /* Adjust letter spacing for a card title look */
+    font-weight: bold; /* Bold font */
+    text-shadow: 2px 2px 4px #000; /* Adding a subtle text shadow */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Highlighted top and left, shadow on right and bottom */
+}
+
+#summon-btn:hover {
+    background: linear-gradient(to bottom, #333, #1a1a1a); /* Darker gradient on hover */
+}
